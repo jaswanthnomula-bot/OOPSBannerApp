@@ -1,25 +1,35 @@
 /*
-*OOPSBannerApp UC-4
-*
-*@author Jaswanth
-*@version 4.0 
-*/
+ * OOPSBannerApp UC5 – Render OOPS as Banner using Inline Array Initialization
+ *
+ * This use case extends UC4 by defining and populating the String array in a more
+ * concise way at the time of declaration using String.join() method to create each
+ * line of the banner. This further enhances code readability and maintainability.
+ *
+ * @author Jaswanth
+ * @version 5.0
+ */
 
-public class OOPSBannerApp{
+// Extend the user story 4 to further develop the OOPS Banner Application by
+// not only using String arrays to hold banner lines and printing them in a
+// loop. But also by defining and populating the array in a more concise way
+// at the time of declaration using String.join() method to create each line
+// of the banner.
+
+public class OOPSBannerApp {
+
+    // Main method to run the banner display
     public static void main(String[] args) {
-    String[] lines = new String[7];
 
-    lines[0] = String.join(" ","   ***   " , " " , "   ***   " , " " , " ******   " , " " , "   *****     ");
-    lines[1] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **    ** " , " " , "  **    **   ");
-    lines[2] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **    ** " , " " , " **          ");
-    lines[3] = String.join(" "," **   ** " , " " , " **   ** " , " " , " ******   " , " " , "   *****     ");
-    lines[4] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **       " , " " , "         **  ");
-    lines[5] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **       " , " " , " **     **   ");
-    lines[6] = String.join(" ","   ***   " , " " , "   ***   " , " " , " **       " , " " , "   *****     ");
+        // Define String Array variable to hold the OOPS banner lines
+        // Each line represents a row in the banner for the letters O, O, P, S
+        String[] lines = {
 
-    for(String line : lines){
-        System.out.println(line);
-    }
-    
+        };
+
+        // Use a loop to print each line of the banner to create the
+        // visual effect for the message "OOPS"
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
