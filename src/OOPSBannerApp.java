@@ -2,7 +2,7 @@
 *OOPSBannerApp UC7
 *
 *@author Jashwanth
-*@version 7.0 
+*@version 7.0
 */
 
 public class OOPSBannerApp {
